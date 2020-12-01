@@ -1,4 +1,9 @@
-packrat::init()
+if (!requireNamespace("remotes"))
+  install.packages("remotes")
+
+remotes::install_github("rstudio/renv")
+
+renv::init()
 
 makeCSV = TRUE
 makeHeatmap = FALSE
